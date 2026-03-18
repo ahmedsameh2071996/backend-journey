@@ -1,4 +1,5 @@
 import { Terminal, Database, Server, Mail, MapPin, Phone, Linkedin, ExternalLink } from "lucide-react";
+import profileImg from "@/assets/ahmed-profile.jpeg";
 
 const HeroSection = () => {
   return (
