@@ -30,9 +30,19 @@ const HeroSection = () => {
             <div className="text-label mb-4 flex items-center gap-2">
               <Terminal className="w-3.5 h-3.5" /> INSTANCE
             </div>
-            <p className="font-semibold text-foreground text-sm mb-1">Ahmed Sameh Mohamed</p>
-            <p className="text-muted-foreground text-xs font-mono">Biomedical Eng. → Software Eng.</p>
-            <p className="text-muted-foreground text-xs font-mono mt-1">Helwan University — Excellent</p>
+            <div className="flex items-start gap-4">
+              <img
+                src={profileImg}
+                alt="Ahmed Sameh Mohamed"
+                className="w-20 h-20 rounded-lg object-cover object-top shrink-0"
+                style={{ boxShadow: "0 0 0 1px rgba(255,255,255,0.08)" }}
+              />
+              <div>
+                <p className="font-semibold text-foreground text-sm mb-1">Ahmed Sameh Mohamed</p>
+                <p className="text-muted-foreground text-xs font-mono">Biomedical Eng. → Software Eng.</p>
+                <p className="text-muted-foreground text-xs font-mono mt-1">Helwan University — Excellent</p>
+              </div>
+            </div>
             <div className="flex flex-wrap gap-2 mt-4">
               <ContactChip icon={<MapPin className="w-3 h-3" />} text="Cairo, EG" />
               <ContactChip icon={<Mail className="w-3 h-3" />} text="ahmedsameh2071996@gmail.com" href="mailto:ahmedsameh2071996@gmail.com" />
